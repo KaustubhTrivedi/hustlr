@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   backend:
+    container_name: ecommerce_backend
     build:
       context: .
       dockerfile: Dockerfile.backend
@@ -11,6 +12,7 @@ services:
       - npm_default
 
   frontend:
+    container_name: ecommerce_frontend
     build:
       context: .
       dockerfile: Dockerfile.frontend
