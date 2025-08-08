@@ -17,7 +17,7 @@ services:
       context: .
       dockerfile: Dockerfile.frontend
     ports:
-      - "3005:80"
+      - "3005:3000"
     networks:
       - npm_default
 
